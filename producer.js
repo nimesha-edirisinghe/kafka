@@ -9,9 +9,9 @@ async function run() {
       authenticationTimeout: 8000,
     });
     const producer = kafka.producer();
-    console.log("Connecting...");
+    console.log("Producer is connecting...");
     await producer.connect();
-    console.log("Connected!");
+    console.log("Producer is connected!");
     //A-M, N-Z
     await producer.createTopics({
       topics: [
